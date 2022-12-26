@@ -1,5 +1,5 @@
 body {
-  background-image: url(/src/nav_header_bg.jpg) !important;
+  background-image: url(https://img.freepik.com/premium-photo/abstract-background-with-white-bricks-n-wall-3d-illustration_106065-353.jpg?w=2000) !important;
 }
 
 input[type=text],
@@ -8,7 +8,7 @@ input[type=password] {
   display: block !important;
   box-sizing: border-box !important;
   margin-bottom: 20px !important;
-  padding: 1px !important;
+  padding: 1px 1em !important;
   height: 2em !important;
   border: none !important;
   border-bottom: 1px solid #AAA !important;
