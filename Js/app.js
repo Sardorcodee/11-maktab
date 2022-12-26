@@ -1,4 +1,10 @@
-let intro = document.querySelector("items-center");let eyon = document.querySelector(".eye");eyon.addEventListener("click", function () {let pass = document.querySelector("#password");let eyn = document.querySelector(".fa-eye");let eynslash = document.querySelector(".fa-eye-slash");if (pass.type === "password") {
+let intro = document.querySelector("items-center");
+let eyon = document.querySelector(".eye");
+eyon.addEventListener("click", function () {
+  let pass = document.querySelector("#password");
+  let eyn = document.querySelector(".fa-eye");
+  let eynslash = document.querySelector(".fa-eye-slash");
+  if (pass.type === "password") {
     eynslash.classList.remove("d-none");
     eyn.classList.add("d-none");
     pass.setAttribute("type", "text");
@@ -13,9 +19,9 @@ let sigI = document.querySelector(".sigin");
 sigU.addEventListener("click", function () {
   let revers = document.querySelector(".p-7");
   setTimeout(() => {
-   revers.classList.add("flex-row-reverse");
-   sigI.classList.remove("border-b-4");
-   sigU.classList.add("border-b-4");
+    revers.classList.add("flex-row-reverse");
+    sigI.classList.remove("border-b-4");
+    sigU.classList.add("border-b-4");
   }, 100);
 });
 sigI.addEventListener("click", function () {
@@ -24,3 +30,10 @@ sigI.addEventListener("click", function () {
   sigI.classList.add("border-b-4");
   sigU.classList.remove("border-b-4");
 });
+function red() {
+  let onlin = navigator.onLine;
+  if(onlin === false){
+    document.body.innerHTML = "Server bilan aloqa yo'q....";
+  }
+};
+red();
