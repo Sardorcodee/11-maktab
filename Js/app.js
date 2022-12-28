@@ -30,10 +30,10 @@ sigU.addEventListener("click", function () {
 sigI.addEventListener("click", function () {
   window.location = "/index.html";
 });
-function red() {
-  let onlin = navigator.onLine;
-  if(onlin === false){
-    document.body.innerHTML = "Server bilan aloqa yo'q....";
-  }
-};
-red();
+// function red() {
+//   let onlin = navigator.onLine;
+//   if(onlin === false){
+//     document.body.innerHTML = "Server bilan aloqa yo'q....";
+//   }
+// };
+// red();
