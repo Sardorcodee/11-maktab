@@ -1,6 +1,5 @@
 body {
   background-image: url(/src/nav_header_bg.webp) !important;
-  height: 140rem !important;
 }
 
 input[type=text],
