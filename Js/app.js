@@ -22,6 +22,7 @@ sigU.addEventListener("click", function () {
     revers.classList.add("flex-row-reverse");
     sigI.classList.remove("border-b-4");
     sigU.classList.add("border-b-4");
+    document.querySelector(".w-100").setAttribute("src", "/src/Signup.png");
   }, 100);
 });
 sigI.addEventListener("click", function () {
@@ -29,11 +30,14 @@ sigI.addEventListener("click", function () {
   revers.classList.remove("flex-row-reverse");
   sigI.classList.add("border-b-4");
   sigU.classList.remove("border-b-4");
+  document
+    .querySelector(".w-100")
+    .setAttribute("src", "/src/user-account-sign-up-4489360-3723267.webp");
 });
-function red() {
-  let onlin = navigator.onLine;
-  if(onlin === false){
-    document.body.innerHTML = "Server bilan aloqa yo'q....";
-  }
-};
-red();
+// function red() {
+//   let onlin = navigator.onLine;
+//   if(onlin === false){
+//     document.body.innerHTML = "Server bilan aloqa yo'q....";
+//   }
+// };
+// red();
