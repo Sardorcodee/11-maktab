@@ -23,21 +23,17 @@ sigU.addEventListener("click", function () {
     sigI.classList.remove("border-b-4");
     sigU.classList.add("border-b-4");
     document.querySelector(".w-100").setAttribute("src", "/src/Signup.png");
+    document.getElementsByTagName("form").innerHTML = "";
+    document.querySelector("form").innerHTML = sigUpp;
   }, 100);
 });
 sigI.addEventListener("click", function () {
-  let revers = document.querySelector(".p-7");
-  revers.classList.remove("flex-row-reverse");
-  sigI.classList.add("border-b-4");
-  sigU.classList.remove("border-b-4");
-  document
-    .querySelector(".w-100")
-    .setAttribute("src", "/src/user-account-sign-up-4489360-3723267.webp");
+  window.location = "/index.html";
 });
-// function red() {
-//   let onlin = navigator.onLine;
-//   if(onlin === false){
-//     document.body.innerHTML = "Server bilan aloqa yo'q....";
-//   }
-// };
-// red();
+function red() {
+  let onlin = navigator.onLine;
+  if(onlin === false){
+    document.body.innerHTML = "Server bilan aloqa yo'q....";
+  }
+};
+red();
