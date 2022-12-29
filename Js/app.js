@@ -1,5 +1,6 @@
 let intro = document.querySelector("items-center");
 let eyon = document.querySelector(".eye");
+console.log(eyon);
 eyon.addEventListener("click", function () {
   let pass = document.querySelector("#password");
   let eyn = document.querySelector(".fa-eye");
