@@ -1,5 +1,59 @@
 body {
   background-image: url(/src/nav_header_bg.webp) !important;
+  font-family: "Chivo", sans-serif;
+}
+
+header {
+  background-color: #32404d;
+  padding: 1em 0.5em;
+}
+header p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #007A5C;
+  font-weight: 500;
+}
+header p a {
+  color: white;
+}
+header strong {
+  color: #007A5C;
+  font-size: 1.5em;
+}
+header span {
+  color: #a2a6aa;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  padding: 1.5em 0;
+}
+nav ul li a {
+  color: #32404d !important;
+  font-family: "Chivo", sans-serif;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+
+.btn-1 {
+  background-color: #007A5C;
+  color: white;
+  padding: 1.2em 2em;
+  font-size: 18px;
+  transition: all 0.1s;
+}
+.btn-1:hover {
+  padding: 1em 1.8em;
+  color: white;
 }
 
 input[type=text],
@@ -22,22 +76,52 @@ input[type=password] {
 input[type=text],
 input[type=email]:focus,
 input[type=password]:focus {
-  border-bottom: 2px solid #6610f2 !important;
-  color: #6610f2 !important;
+  border-bottom: 2px solid #007a5c !important;
+  color: #007a5c !important;
   background-color: transparent;
   transition: 0.2s ease !important;
 }
 
+.error {
+  color: red;
+  background-color: white;
+  position: fixed;
+  bottom: 3em;
+  left: 2em;
+  width: 300px;
+  font-size: 1em;
+  z-index: 999;
+  padding: 1em 1em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border-left: 8px solid red;
+  box-shadow: 0px 4px 79px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 4px 79px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 4px 79px 6px rgba(0, 0, 0, 0.4);
+}
+.error i {
+  font-size: 2em;
+  border: 3px solid red;
+  border-radius: 50%;
+  width: 40px;
+  padding: 3px 0px;
+  height: 40px;
+  text-align: center;
+}
+
 .indigo {
-  color: #6610f2 !important;
+  color: #007a5c !important;
 }
 
 .indigob {
-  background-color: #6610f2 !important;
+  background-color: #007a5c !important;
 }
 
 .indigobo {
-  border-color: #6610f2 !important;
+  border-color: #007a5c !important;
 }
 
 .border-b-4 {
@@ -72,7 +156,6 @@ input[type=password]:focus {
 }
 
 h2 {
-  z-index: 9999;
   font-size: 2em !important;
 }
 
@@ -85,18 +168,34 @@ h2 {
   height: 40px;
   text-align: center;
   padding: 0.255em;
+  transition: all 0.33s;
 }
 .icon:hover {
-  border-color: #6610f2;
+  border-color: #10f223;
   transform: translate(0%, -15%) rotateY(180deg);
-  color: #6610f2;
+  color: #10f223;
 }
 
 .Logo {
   width: 300px;
+  color: red;
+}
+.Logo:hover {
+  transform: perspective(90deg);
 }
 
 .flink {
+  font-family: sans-serif;
+  color: rgb(153, 150, 150);
+  font-size: 0.9em;
+  width: 140px;
+  transition: all 0.5s;
+}
+.flink:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.fk {
   color: white;
-  font-size: 1.1em;
-}/*# sourceMappingURL=style-1.css.map */
+}/*# sourceMappingURL=Style-1.css.map */
