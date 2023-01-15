@@ -50,8 +50,8 @@ nav {
   color: $oq;
   padding: 1.2em 2em;
   font-size: 18px;
-  transition: all .1s;
-  &:hover{
+  transition: all 0.1s;
+  &:hover {
     padding: 1em 1.8em;
     color: $oq;
   }
@@ -107,6 +107,69 @@ input[type="password"]:focus {
     padding: 3px 0px;
     height: 40px;
     text-align: center;
+  }
+}
+.loader {
+  position: fixed !important;
+  top: 0;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  background-color: $oq;
+  height: 100vh !important;
+  width: 100vw !important;
+  z-index: 9999999 !important;
+  .rotate {
+    width: 250px;
+    height: 250px;
+    border-right: 6px solid $asosiy;
+    border-left: 6px solid $asosiy;
+    border-top: 6px solid $oq;
+    border-bottom: 6px solid $oq;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position:absolute;
+    animation: load .9s infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+
+  img {
+    width: 220px;
+    position: relative;
+    
+  }
+  span{
+    color: $asosiy;
+    position: absolute;
+    font-size: 1.1em;
+    top: 54%;
+  }
+}
+@keyframes load {
+  0%{
+    transform: rotate(72deg);
+    
+  }
+  25%{
+    transform: rotate(144deg);
+    
+  }
+  50%{
+    transform: rotate(216deg);
+    
+  }
+  75%{
+    transform: rotate(288deg);
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    transform: scale(10px);
+    
   }
 }
 .indigo {

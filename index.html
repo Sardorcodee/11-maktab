@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
   <head>
+    <meta name="google" content="notranslate" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,24 +60,35 @@
           </div>
         </div>
         <div class="col-12 col-lg-2 mt-3 mt-lg-0 mb-3 mb-lg-0">
-         <button type="button"><a  class="btn-1" href="https://login.kundalik.com/login/?ReturnUrl=https%3a%2f%2fkundalik.com%2fuserfeed" target="_blank">Kundalikga o'tish</a></button>
+          <button type="button">
+            <a
+              class="btn-1"
+              href="https://login.kundalik.com/login/?ReturnUrl=https%3a%2f%2fkundalik.com%2fuserfeed"
+              target="_blank"
+              >Kundalikga o'tish</a
+            >
+          </button>
         </div>
       </div>
     </header>
+    <div class="container-fluid loader d-none">
+      <img src="/src/Logo001.png" alt="" />
+      <span>Yuklanmoqda...</span>
+      <div class="rotate"></div>
+    </div>
     <nav>
       <div class="container d-flex justify-content-between m-auto">
         <div class="d-flex align-items-center gap-5">
-          <img class="Logo" src="/src/Logo001.png" alt="logo" />
+          <a href="/"><img class="Logo" src="/src/Logo001.png" alt="logo" /></a>
           <main>
             <ul class="d-lg-flex gap-3 justify-content-center d-none">
-              <li><a href="#">Bosh sahifa</a></li>
-              <li class="dropdown">
+              <li><a href="/">Bosh sahifa</a></li>
+              <li>
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  
                 >
                   Mening maktabim
                 </a>
@@ -84,19 +96,41 @@
                   <li><a class="dropdown-item" href="#">Sinflar</a></li>
                   <li><a class="dropdown-item" href="#">O'qituvchilar</a></li>
                   <li><a class="dropdown-item" href="#">O'quvchilar</a></li>
-                  <li><a class="dropdown-item" href="#">A'lo o'quvchilar</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">A'lo o'quvchilar</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Haqida!</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="#">Dars jadvali</a></li>
-              <li><a href="#">Kontakt</a></li>
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Maktab hayoti
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dars vaqtlari</a></li>
+                  <li><a class="dropdown-item" href="#">Sinfxonalar</a></li>
+                  <li><a class="dropdown-item" href="#">O'quvchilar</a></li>
+                  <li><a class="dropdown-item" href="#">Kutubxona</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Maktab xovlisi</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="/User/Dars jadval">Dars jadvali</a></li>
+              <li><a href="/User/Contact/">Kontakt</a></li>
               <li><a href="#">Kundalikga o'tish</a></li>
             </ul>
           </main>
         </div>
+      </div>
     </nav>
     <section>
       <div
@@ -106,10 +140,9 @@
           data-aos="fade-down-right"
           class="p-7 container rounded-3 bg-white row align-items-center justify-content-center gap-3 gap-xl-5"
         >
-        <div class="error d-none"><i class="fa-solid fa-check "></i> Xatolik</div>
-          <h2 class="text-center indigob py-3 fs-5 text-white">
-            11-umum ta'lim maktabi saytiga xush kelibsiz!
-          </h2>
+          <div class="error d-none">
+            <i class="fa-solid fa-check"></i> Xatolik
+          </div>
           <div class="page-1 col-12 col-md-10 col-lg-4">
             <div class="d-flex justify-content-between">
               <button
@@ -134,8 +167,8 @@
               <span>Or</span>
               <hr class="bg-primary w-36" />
             </div>
-            <form action="">
-              <div class="mt-1 l position-relative">
+            <form action="" id="form">
+              <div class="mt-1 position-relative">
                 <label for="email" class="block text-base mb-2 indigo"
                   >Email</label
                 >
@@ -174,7 +207,7 @@
                   />
                   <label class="fs-5" for="chek">Remember me</label>
                 </div>
-                <div class="text-blue-500 fs-5">
+                <div class="forgot text-blue-500 fs-5">
                   <a href="#">Forgot Password?</a>
                 </div>
               </div>
@@ -214,7 +247,7 @@
             </li>
           </ul>
           <ul class="col-lg-3 col-md-6 d-flex flex-column gap-2 mb-4 mb-md-0">
-            <strong class="fk">Malumot!</strong>
+            <span class="fk">Malumot!</span>
             <li class="flink"><a href="/">Biz haqimizda!</a></li>
             <li class="flink"><a href="/">Fikr-mulohaza</a></li>
             <li class="flink"><a href="/">Qo'llab-quvvatlsh</a></li>
@@ -224,7 +257,7 @@
           <ul
             class="col-lg-3 col-md-6 d-flex flex-column ps-md-5 ps-lg-0 gap-2"
           >
-            <strong class="fk">Sayt bo'limi!</strong>
+            <span class="fk">Sayt bo'limi!</span>
             <li class="flink"><a href="/">Maktab haqida</a></li>
             <li class="flink"><a href="/">O'qituvchilar</a></li>
             <li class="flink"><a href="/">O'quvchilar</a></li>
@@ -234,7 +267,7 @@
           <ul
             class="col-lg-3 col-md-6 d-flex flex-column gap-2 ps-md-2 ps-lg-0 mt-4 mt-md-0"
           >
-            <strong class="fk">Kerakli bo'limlar!</strong>
+            <span class="fk">Kerakli bo'limlar!</span>
             <li class="flink"><a href="/">Kunlik yo'qlama</a></li>
             <li class="flink"><a href="/">Kunlik yo'qlama</a></li>
             <li class="flink">
@@ -280,7 +313,8 @@
       AOS.init();
     </script>
     <script src="/Js/bootstrap.js"></script>
+    <script src="/Js/home.js"></script>
+    <script src="/Js/grogeonveveoroir.js"></script>
     <script src="/Js/app.js"></script>
-    <script src="/Js/Html.js"></script>
   </body>
 </html>
