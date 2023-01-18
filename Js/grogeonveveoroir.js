@@ -21,12 +21,14 @@ sigU.addEventListener("click", function () {
   sigI.classList.add("aktiv");
   sigI.classList.remove("border-b-4");
   sigU.classList.add("border-b-4");
+  document.querySelector(".google").classList.add("d-none");
+  document.querySelector(".or").classList.add("d-none");
   document.querySelector(".forgot").classList.add("d-none");
   let newDv = document.createElement("div");
   newDv.classList.add("mt-1");
   newDv.classList.add("position-relative");
   formi.prepend(newDv);
-  let name = `<label for="email" class="block text-base mb-2 indigo"
+  let name = `<label for="email" class="block pt-4  text-base mb-2 indigo"
   >Full Name</label
   >
   <input
@@ -41,7 +43,7 @@ sigU.addEventListener("click", function () {
   newDv.innerHTML = name;
   let ak = document.querySelector(".aktiv");
   ak.addEventListener("click", function () {
-    window.location = "/";
+    window.location = "/login.html";
   });
 });
 

@@ -1,47 +1,53 @@
-@import "color.scss";
-body {
-  background-image: url(/src/nav_header_bg.webp);
-  font-family: "Chivo", sans-serif;
+@import "Color.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-header {
-  background-color: #32404d;
-  padding: 1em 0.5em;
-  p {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: $asosiy;
-    font-weight: 500;
-    a {
-      color: $oq;
+
+body {
+  display: grid;
+  grid-template-columns: 4.5fr 7fr;
+  align-items: center;
+  justify-content: center;
+  
+  .container-1 {
+    background-color: $asosiy;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 500px !important;
+      height: 500px !important;
+      background-color: transparent;
+      -webkit-box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
+      -moz-box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
+      box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
     }
   }
-  strong {
-    color: $asosiy;
-    font-size: 1.5em;
-  }
-  span {
-    color: #a2a6aa;
-    font-size: 18px;
-    font-weight: 500;
-  }
-}
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.4);
-  background-color: $oq;
-  padding: 1.5em 0;
-  ul {
-    li {
-      a {
-        color: #32404d !important;
-        font-family: "Chivo", sans-serif;
-        font-weight: 500 !important;
-        font-size: 18px !important;
-      }
+  .container-2 {
+    height: 100vh;
+
+    background-color: $oq;
+    display: flex;
+      justify-content: start;
+      align-items: center;
+    .inp-div {
+      display: grid;
+      flex-direction: column;
+      
+      padding: 1em 10em;
+      width: 850px !important;
+      height:500px !important;
+      background-color: transparent;
+      -webkit-box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
+      -moz-box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
+      box-shadow: -1px 0px 21px 20px rgba(34, 60, 80, 0.18);
     }
   }
 }
@@ -130,8 +136,8 @@ input[type="password"]:focus {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    position:absolute;
-    animation: load .9s infinite;
+    position: absolute;
+    animation: load 0.9s infinite;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: forwards;
     animation-direction: alternate;
@@ -140,9 +146,8 @@ input[type="password"]:focus {
   img {
     width: 220px;
     position: relative;
-    
   }
-  span{
+  span {
     color: $asosiy;
     position: absolute;
     font-size: 1.1em;
@@ -150,26 +155,21 @@ input[type="password"]:focus {
   }
 }
 @keyframes load {
-  0%{
+  0% {
     transform: rotate(72deg);
-    
   }
-  25%{
+  25% {
     transform: rotate(144deg);
-    
   }
-  50%{
+  50% {
     transform: rotate(216deg);
-    
   }
-  75%{
+  75% {
     transform: rotate(288deg);
-    
   }
-  100%{
+  100% {
     transform: rotate(360deg);
     transform: scale(10px);
-    
   }
 }
 .indigo {
@@ -201,46 +201,17 @@ input[type="password"]:focus {
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset !important;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset !important;
 }
-h2 {
-  font-size: 2em !important;
-}
-.icon {
-  border-radius: 50%;
-  // width: 50px;
-  // height: 50px;
-  color: $oq;
-  border: 2px solid $oq;
-  font-size: 1.5em;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding: 0.255em;
-  transition: all 0.33s;
-  &:hover {
-    border-color: #10f223;
-    transform: translate(0%, -15%) rotateY(180deg);
-    color: #10f223;
-  }
-}
-.Logo {
-  width: 300px;
-  color: red;
-  &:hover {
-    transform: perspective(90deg);
-  }
-}
-
-.flink {
-  font-family: sans-serif;
-  color: rgb(153, 150, 150);
-  font-size: 0.9em;
-  width: 140px;
-  transition: all 0.5s;
-  &:hover {
-    color: blue;
-    text-decoration: underline;
-  }
-}
-.fk {
-  color: $oq;
+@media (max-width: 768px) {
+    body{
+    //     display: flex;
+    //     flex-direction: column;
+    //    grid-template-areas: 0fr 12fr!important;
+    .container-1{
+        display: none;
+       }
+    .container-2{
+        width: 100vw!important;
+       }
+      
+    }
 }
