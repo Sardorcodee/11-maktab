@@ -43,7 +43,7 @@ sigU.addEventListener("click", function () {
   newDv.innerHTML = name;
   let ak = document.querySelector(".aktiv");
   ak.addEventListener("click", function () {
-    window.location = "/login.html";
+    window.location = "/index.html";
   });
 });
 
