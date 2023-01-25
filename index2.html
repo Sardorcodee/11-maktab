@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta name="google" content="notranslate" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/css/bootstrap-1.css" />
+    <link rel="stylesheet" href="/style/css/Style-1.css" />
+    <link rel="icon" href="/src/android-chrome-512x512.png" type="icon/png" />
+    <script src="/Js/index.js"></script>
+    <title>Umum ta'lim maktabi</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="container d-flex row align-items-center text-center m-auto gap-3 gap-lg-0"
+      >
+        <div class="col-12 col-lg-5">
+          <p>
+            Tezkor a'loqa yoki muhim eslatma uchun:<a href="tel:+998936060509"
+              >+998936060509</a
+            >
+          </p>
+        </div>
+        <div class="col-12 col-lg-5 d-flex gap-3 justify-content-center">
+          <div class="d-flex flex-column text-center">
+            <strong id="yil"></strong>
+            <span>Yil</span>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <strong id="oy"></strong>
+            <span>Oy</span>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <strong id="kun"></strong>
+            <span>Kun</span>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <strong id="soat"></strong>
+            <span>Soat</span>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <strong id="minut"></strong>
+            <span>Minut</span>
+          </div>
+          <div class="d-flex flex-column text-center">
+            <strong id="sekund"></strong>
+            <span>Sekund</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 mt-3 mt-lg-0 mb-3 mb-lg-0">
+          <button type="button">
+            <a
+              class="btn-1"
+              href="https://login.kundalik.com/login/?ReturnUrl=https%3a%2f%2fkundalik.com%2fuserfeed"
+              target="_blank"
+              >Kundalikga o'tish</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid loader d-none">
+      <img src="/src/Logo001.png" alt="" />
+      <span>Yuklanmoqda...</span>
+      <div class="rotate"></div>
+    </div>
+    <nav>
+      <div class="container d-flex justify-content-between m-auto">
+        <div class="d-flex align-items-center gap-5">
+          <a href="/"><img class="Logo" src="/src/Logo001.png" alt="logo" /></a>
+          <main>
+            <ul class="d-lg-flex gap-3 justify-content-center d-none">
+              <li><a href="/">Bosh sahifa</a></li>
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Mening maktabim
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sinflar</a></li>
+                  <li><a class="dropdown-item" href="#">O'qituvchilar</a></li>
+                  <li><a class="dropdown-item" href="#">O'quvchilar</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">A'lo o'quvchilar</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Haqida!</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Maktab hayoti
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dars vaqtlari</a></li>
+                  <li><a class="dropdown-item" href="#">Sinfxonalar</a></li>
+                  <li><a class="dropdown-item" href="#">O'quvchilar</a></li>
+                  <li><a class="dropdown-item" href="#">Kutubxona</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Maktab xovlisi</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="/User/Dars jadval">Dars jadvali</a></li>
+              <li><a href="/User/Contact/">Kontakt</a></li>
+              <li><a href="#">Kundalikga o'tish</a></li>
+            </ul>
+          </main>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div
+        class="d-flex justify-content-center align-items-md-center align-items-sm-start"
+      >
+        <div
+          data-aos="fade-down-right"
+          class="p-7 container rounded-3 bg-white row align-items-center justify-content-center gap-3 gap-xl-5"
+        >
+          <div class="error d-none">
+            <i class="fa-solid fa-check"></i> Xatolik
+          </div>
+          <div class="page-1 col-12 col-md-10 col-lg-4">
+            <div class="d-flex justify-content-between">
+              <button
+                class="text-3xl sigin border-b-4 indigobo text-left indigo font-semibold"
+              >
+                <i class="fa-solid fa-user"></i> Login
+              </button>
+              <button
+                class="text-3xl sigUp indigobo text-left indigo font-semibold"
+              >
+                <i class="fa-solid fa-user-plus"></i>SignUP
+              </button>
+            </div>
+            <button
+              class="w-full mt-4 bg-light drop-shadow-lg hover:drop-shadow-sm py-2 mb-2 bg-body rounded-3 mt-2 py-1.5 fs-5 d-flex align-items-center justify-content-center indigo"
+            >
+              <img class="w-7 mr-2" src="src/icons8-google.svg" />Continue with
+              Google
+            </button>
+            <div class="mt-1 d-flex justify-content-center align-items-center">
+              <hr class="bg-primary w-36" />
+              <span>Or</span>
+              <hr class="bg-primary w-36" />
+            </div>
+            <form action="" id="form">
+              <div class="mt-1 position-relative">
+                <label for="email" class="block text-base mb-2 indigo"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-5 focus:border-gray-600"
+                  placeholder="Enter email..."
+                  required
+                />
+              </div>
+              <div class="mt-3 l position-relative">
+                <label for="password" class="block text-base mb-2 indigo"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  class="border fs-4 w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600"
+                  placeholder="Enter password..."
+                  required
+                />
+                <div
+                  class="eye fs-4 indigo position-absolute right-7 bottom-0.5"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-eye-slash d-none"></i>
+                </div>
+              </div>
+              <div class="mt-3 flex justify-between items-center">
+                <div>
+                  <input
+                    class="form-check-input mt-2"
+                    type="checkbox"
+                    id="chek"
+                  />
+                  <label class="fs-5" for="chek">Remember me</label>
+                </div>
+                <div class="forgot text-blue-500 fs-5">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="btn border-2 indigobo indigob text-white drop-shadow-lg hover:drop-shadow py-2 w-full rounded-md hover:bg-transparent hover:bg-red-700 font-semibold"
+                >
+                  <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Login
+                </button>
+              </div>
+            </form>
+
+            <div></div>
+          </div>
+          <div class="col-12 col-md-10 col-lg-5 page-2">
+            <img
+              class="w-100 h-100"
+              src="/src/user-account-sign-up-4489360-3723267.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Login end -->
+    <footer class="bg-dark">
+      <div class="container py-4">
+        <div
+          class="d-flex align-items-start justify-content-between row justify-content-md-center mt-4"
+        >
+          <ul class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <li>
+              <a href="/"
+                ><img class="Logo" src="/src/Logo000.png" alt="Logo"
+              /></a>
+            </li>
+          </ul>
+          <ul class="col-lg-3 col-md-6 d-flex flex-column gap-2 mb-4 mb-md-0">
+            <span class="fk">Malumot!</span>
+            <li class="flink"><a href="/">Biz haqimizda!</a></li>
+            <li class="flink"><a href="/">Fikr-mulohaza</a></li>
+            <li class="flink"><a href="/">Qo'llab-quvvatlsh</a></li>
+            <li class="flink"><a href="/">Yordam</a></li>
+            <li class="flink"><a href="/">FAQs</a></li>
+          </ul>
+          <ul
+            class="col-lg-3 col-md-6 d-flex flex-column ps-md-5 ps-lg-0 gap-2"
+          >
+            <span class="fk">Sayt bo'limi!</span>
+            <li class="flink"><a href="/">Maktab haqida</a></li>
+            <li class="flink"><a href="/">O'qituvchilar</a></li>
+            <li class="flink"><a href="/">O'quvchilar</a></li>
+            <li class="flink"><a href="/">Darliklar</a></li>
+            <li class="flink"><a href="/">Dars jadvali</a></li>
+          </ul>
+          <ul
+            class="col-lg-3 col-md-6 d-flex flex-column gap-2 ps-md-2 ps-lg-0 mt-4 mt-md-0"
+          >
+            <span class="fk">Kerakli bo'limlar!</span>
+            <li class="flink"><a href="/">Kunlik yo'qlama</a></li>
+            <li class="flink"><a href="/">Kunlik yo'qlama</a></li>
+            <li class="flink">
+              <a href="https://kundalik.com" target="_blank">Kundalik.com</a>
+            </li>
+            <li class="flink"><a href="/">Tugaraklar</a></li>
+            <li class="flink"><a href="/">Sinflar</a></li>
+            <li class="flink"><a href="/">A'lo o'quvchilar</a></li>
+          </ul>
+        </div>
+        <!-- end -->
+        <div class="d-flex px-lg-5 px-md-4 row gap-md-0 g-4 mt-4 mb-2">
+          <div class="d-flex gap-2 align-items-center col-12 col-md-8 col-lg-9">
+            <p class="text-white fs-6">Bizni kuzatib boring:</p>
+            <a data-aos="fade-down-right" href="#"
+              ><i class="fa-brands fa-telegram icon"></i
+            ></a>
+            <a data-aos="fade-down-right" href="#"
+              ><i class="fa-brands fa-instagram icon"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+          </div>
+          <div class="d-flex gap-2 align-items-center col-12 col-md-4 col-lg-3">
+            <p class="text-white fs-6">Mobil ilova:</p>
+            <a href="#"><i class="fa-brands fa-android icon"></i></a>
+          </div>
+        </div>
+        <!-- coprugth -->
+      </div>
+    </footer>
+    <div class="container-fluid py-4 bg-black">
+      <h3 class="text-white fs-6 text-center">
+        &copy;2022-
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        11-maktab | Made with ❤️
+      </h3>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/Js/bootstrap.js"></script>
+    <script src="/Js/home.js"></script>
+    <script src="/Js/grogeonveveoroir.js"></script>
+    <script src="/Js/app.js"></script>
+  </body>
+</html>

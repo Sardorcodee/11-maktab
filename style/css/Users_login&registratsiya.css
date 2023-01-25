@@ -239,7 +239,9 @@ input[type=password]:focus {
   body .container-1 {
     display: none;
   }
-  body .container-2 {
+  body .container-2 .inp-div {
+    padding: 1em !important;
     width: 100vw !important;
+    height: auto !important;
   }
 }/*# sourceMappingURL=Users_login&registratsiya.css.map */

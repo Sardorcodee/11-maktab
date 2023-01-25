@@ -203,14 +203,17 @@ input[type="password"]:focus {
 }
 @media (max-width: 768px) {
     body{
-    //     display: flex;
-    //     flex-direction: column;
-    //    grid-template-areas: 0fr 12fr!important;
     .container-1{
         display: none;
        }
     .container-2{
-        width: 100vw!important;
+        
+        .inp-div{
+            
+            padding: 1em!important;
+            width: 100vw!important;
+            height:auto!important;
+        }
        }
       
     }
